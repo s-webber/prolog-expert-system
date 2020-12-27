@@ -1,0 +1,17 @@
+*.class
+*.jar
+*.zip
+*.tmp
+*.out
+
+.classpath
+.project
+.settings
+
+/bin
+/build
+/lib
+/tmp
+/temp
+/target
+/failed-gui-tests
