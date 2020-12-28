@@ -6,7 +6,20 @@ This project demonstrates how an expert system can be constructed by integrating
 
 The subject of the expert system is the classification of birds. The rules are taken from the [birds.pl](http://www.amzi.com/AdventureInProlog/appendix.php#Birds) program described in the book ["Adventure in Prolog"](http://www.amzi.com/AdventureInProlog/) by Dennis Merritt (ISBN: 978-1520918914). 
 
-Remove the `@Ignore` annotation from `ExpertSystemApplicationTest` to enable the [AssertJ Swing](https://joel-costigliola.github.io/assertj/assertj-swing.html) unit tests.
+## How to run
+
+
+You can build the application using the command:
+
+```
+./mvnw package
+```
+
+You can then run the application using the command:
+
+```
+java -jar target/prolog-expert-system-0.1.0-SNAPSHOT.jar
+```
 
 ## Resources
 
