@@ -22,13 +22,12 @@ class RulesEngine {
    /** A reference to the expert system in order to display the question and answers. */
    private final UserInterface ui;
    private final AskUserPredicate askUserPredicate;
-   private final Projog projog;
    private final QueryPlan birdQuery;
 
    RulesEngine(UserInterface ui) {
       this.ui = ui;
       this.askUserPredicate = new AskUserPredicate();
-      this.projog = createProjog(askUserPredicate);
+      Projog projog = createProjog(askUserPredicate);
       this.birdQuery = projog.createPlan("bird(Bird).");
    }
 

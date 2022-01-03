@@ -1,0 +1,27 @@
+@startuml PrologExpertSystem.png
+hide members
+
+package "javax.swing" #DDDDDD {
+class JFrame
+}
+
+package "org.projog.api" #DDDDDD {
+class Projog
+class QueryPlan
+abstract AbstractSingleResultPredicate
+}
+
+interface UserInterface {
+}
+
+ExpertSystemApplication o-right- RulesEngine
+RulesEngine o-up- UserInterface
+RulesEngine o-- QueryPlan
+RulesEngine ..> Projog
+RulesEngine o-- AskUserPredicate
+AskUserPredicate <|-- AbstractSingleResultPredicate
+AskUserPredicate .left.> UserInterface
+GraphicalUserInterface <|-down- UserInterface
+GraphicalUserInterface <|-left- JFrame
+
+@enduml

@@ -8,6 +8,8 @@ import org.projog.expert.ui.UserInterface;
  * <p>
  * The UI is implemented in Java and the rules implemented in Prolog. The open source Projog library is used to
  * integrate Java with Prolog.
+ * </p>
+ * <img src="doc-files/PrologExpertSystem.png">
  */
 public class ExpertSystemApplication {
    private final RulesEngine rulesEngine;
