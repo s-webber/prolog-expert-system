@@ -1,4 +1,5 @@
 # prolog-expert-system
+[![Build Status](https://github.com/s-webber/prolog-expert-system/actions/workflows/github-actions.yml/badge.svg)](https://github.com/s-webber/prolog-expert-system/actions/)
 
 ## About
 
